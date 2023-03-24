@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800" minWidth="1000" prefHeight="800.0" prefWidth="1000.0"
+            styleClass="mainWindow" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/" fx:controller="com.webstudio.view.ViewController">
+    <center>
+        <StackPane fx:id="mainPane" layoutX="10.0" layoutY="30.0" styleClass="mainPane" />
+    </center>
+   <top>
+        <Pane fx:id="titlePane" maxHeight="35" styleClass="titlePane" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="btnPlay" fitHeight="43.0" fitWidth="49.0" layoutX="25.0" layoutY="5.0">
+               <image>
+                  <Image url="@oie_21126154YU5FLxd-2.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnClose" fitHeight="29.0" fitWidth="27.0" layoutX="960.0" layoutY="9.0">
+               <image>
+                  <Image url="@icons8-умножение-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnMinimize" fitHeight="37.0" fitWidth="30.0" layoutX="933.0" layoutY="5.0">
+               <image>
+                  <Image url="@icons8-развернуть-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnFullWindow" fitHeight="35.0" fitWidth="30.0" layoutX="908.0" layoutY="6.0">
+               <image>
+                  <Image url="@icons8-свернуть-100.png" />
+               </image>
+            </ImageView>
+            <MenuButton id="fMenu" alignment="TOP_LEFT" layoutX="94.0" layoutY="9.0" lineSpacing="5.0" mnemonicParsing="false" popupSide="RIGHT" styleClass="fMenu" text="File" textFill="WHITE">
+              <items>
+                  <MenuItem id="nFile" fx:id="nFile" mnemonicParsing="false" onAction="#newFile" styleClass="rowMenu" text="New file" />
+                  <MenuItem id="oFile" fx:id="oFile" mnemonicParsing="false" onAction="#openFile" styleClass="rowMenu" text="Open file" />
+                <MenuItem id="fSave" fx:id="fSave" mnemonicParsing="false" onAction="#save" styleClass="rowMenu" text="Save" />
+                <MenuItem id="asSave" fx:id="asSave" mnemonicParsing="false" onAction="#saveAs" styleClass="rowMenu" text="Save as" />
+              </items>
+               <font>
+                  <Font name="Caladea" size="22.0" />
+               </font>
+            </MenuButton>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

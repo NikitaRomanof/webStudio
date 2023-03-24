@@ -1,0 +1,102 @@
+.tagmark {
+    -fx-fill: gray;
+}
+.anytag {
+    -fx-fill: crimson;
+}
+.paren {
+    -fx-fill: firebrick;
+    -fx-font-weight: bold;
+}
+.attribute {
+    -fx-fill: darkviolet;
+}
+.avalue {
+    -fx-fill: black;
+}
+
+.comment {
+	-fx-fill: teal;
+}
+
+.css {
+    -fx-fill: darkgreen;
+}
+
+.state {
+    -fx-fill: darkviolet;
+}
+
+.id {
+    -fx-fill: blue;
+}
+
+.mainWindow {
+    -fx-background-color: #000;
+    -fx-background-radius: 30;
+}
+.mainPane {
+    -fx-padding:15 10 15 10;
+    -fx-background-radius: 30;
+}
+
+.codeArea {
+    -fx-background-color: c2c2c2;
+    -fx-padding:15 10 15 10;
+    -fx-background-radius: 30;
+    -fx-font-size: 15;
+}
+
+.vsPane .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.vsPane .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+
+.vsPane .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.vsPane .scroll-bar:vertical .track{
+	-fx-background-color: #222;
+	-fx-border-color: #222;
+	-fx-background-radius: 10;
+	-fx-border-radius:10;
+}
+
+.vsPane .scroll-bar:vertical .increment-button ,
+.vsPane .scroll-bar:vertical .decrement-button {
+
+    -fx-background-color:transparent;
+}
+
+.vsPane  .scroll-bar .increment-arrow,
+.vsPane  .scroll-bar .decrement-arrow,
+ {
+	-fx-background-color:transparent;
+	-fx-padding:3;
+}
+
+
+.vsPane .scroll-bar:vertical .thumb {
+    -fx-background-color: #333;
+	-fx-background-radius: 10;
+}
+
+.menu {
+    -fx-background-color: green;
+}
+
+.rowMenu {
+    -fx-background-color: green;
+    -fx-font-color: white;
+    -fx-font-size: 16;
+}
+
+
+
+
+
